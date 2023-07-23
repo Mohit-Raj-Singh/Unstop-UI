@@ -25,11 +25,6 @@ const NewAssesment = () => {
           </div>
           <div className="select-parent">
             <div className="name-of-assessment">Select</div>
-            {/* <img
-              className="keyboard-arrow-down-icon"
-              alt=""
-              src="/keyboard-arrow-down.svg"
-            /> */}
             <MdOutlineKeyboardArrowDown className="keyboard-arrow-down-icon" />
           </div>
         </div>
@@ -52,7 +47,6 @@ const NewAssesment = () => {
                 <div className="frame-wrapper">
                   <div className="uiux-and-design-parent">
                     <div className="name-of-assessment">UI/UX and Design</div>
-                    {/* <img className="close-icon" alt="" src="/close.svg" /> */}
                     <RxCross2 className="close-icon" />
                   </div>
                 </div>

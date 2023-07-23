@@ -269,15 +269,13 @@
   flex-shrink: 0;
 }
 .frame-child20 {
- 
   width: 35px;
   height: 35px;
-  
+
   color: #4528e9;
-  
 }
-.frame-bag-child20{
-  background-color: #EBE8FD;
+.frame-bag-child20 {
+  background-color: #ebe8fd;
   width: 45px;
   height: 45px;
   border-radius: var(--br-xs);

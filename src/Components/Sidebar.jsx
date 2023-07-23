@@ -13,14 +13,12 @@ const Sidebar = () => {
         </div>
         <div className="frame-wrapperr">
           <div className="dashboard-parentt">
-            {/* <img className="dashboard-iconn" alt="" src="/dashboard.svg" /> */}
             <MdOutlineDashboard className="dashboard-iconn" />
             <div className="menuu">Dashboard</div>
           </div>
         </div>
         <div className="frame-containerr">
           <div className="note-alt-parentt">
-            {/* <img className="note-alt-iconn" alt="" src="/note-alt.svg" /> */}
             <MdOutlineContentPaste className="note-alt-iconn" />
             <div className="assessmentt">Assessment</div>
           </div>
@@ -28,7 +26,6 @@ const Sidebar = () => {
         </div>
         <div className="frame-wrapperr">
           <div className="dashboard-parentt">
-            {/* <img className="note-alt-iconn" alt="" src="/quiz.svg" /> */}
             <BiPaste className="note-alt-iconn" />
             <div className="menuu">My Library</div>
           </div>
@@ -38,7 +35,6 @@ const Sidebar = () => {
       <div className="frame-wrapperr1">
         <div className="frame-parentt1">
           <div className="dashboard-parentt">
-            {/* <img className="note-alt-iconn" alt="" src="/admin-meds.svg" /> */}
             <MdOutlineContentPaste className="note-alt-iconn" />
             <div className="menuu">Round Status</div>
           </div>

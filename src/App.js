@@ -3,14 +3,16 @@ import AssesmentDesktop from './Components/AssesmentDesktop';
 import AssesmentMobile from './Components/AssesmentMobile';
 import NewAssesment from './Components/NewAssesment';
 import Sidebar from './Components/Sidebar';
+import SubSection from './Components/SubSection';
 
 function App() {
   return (
     <div className="App">
-      {/* <NewAssesment /> */}
-      {/* <AssesmentMobile /> */}
+      {/* <NewAssesment />
+      <AssesmentMobile />
       <Sidebar />
-      {/* <AssesmentDesktop /> */}
+      <SubSection /> */}
+      <AssesmentDesktop />
     </div>
   );
 }
