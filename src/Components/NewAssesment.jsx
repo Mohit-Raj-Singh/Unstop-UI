@@ -3,12 +3,12 @@ import "./NewAssesment.css";
 import { RxCross2 } from "react-icons/rx";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-const NewAssesment = () => {
+const NewAssesment = ({closeModal}) => {
   return (
     <div className="frame-parent">
       <div className="create-new-assessment-parent">
         <div className="create-new-assessment">Create new assessment</div>
-        <RxCross2 className="cut-icon" />
+        <RxCross2 className="cut-icon" onClick={closeModal} />
       </div>
       <div className="frame-group">
         <div className="frame-container">

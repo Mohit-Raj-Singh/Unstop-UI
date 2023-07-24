@@ -267,6 +267,7 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .new-assessmentM {
   position: relative;
@@ -790,4 +791,11 @@
   font-size: var(--font-size-xl);
   color: var(--text-100);
   font-family: var(--font-inter);
+}
+.openModal-frame{
+  width: 50%;
+  margin: auto;
+  margin-left: 270px;
+  margin-top: 80px;
+  background-color: black;
 }

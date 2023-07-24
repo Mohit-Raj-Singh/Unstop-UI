@@ -13,8 +13,20 @@ import { RiParentLine } from "react-icons/ri";
 import { TbWorldUp } from "react-icons/tb";
 import { ImMobile } from "react-icons/im";
 import { BsBagCheck } from "react-icons/bs";
+import { useState } from "react";
+import NewAssesment from "./NewAssesment";
 
 const AssesmentDesktop = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="frame-parentM">
       <div className="frame-childM" />
@@ -126,7 +138,7 @@ const AssesmentDesktop = () => {
               </div>
               <div className="assessmentMs-overview-parentM">
                 <div className="my-assessmentM-parentM">
-                  <div className="assessmentMs-overview">My assessmentM</div>
+                  <div className="assessmentMs-overview">My Assessment</div>
                   <div className="frame-wrapperM3">
                     <div className="frame-childM8" />
                   </div>
@@ -135,7 +147,7 @@ const AssesmentDesktop = () => {
                   <div className="frame-parentM14">
                     <div className="frame-parentM15">
                       <div className="frame-parentM16">
-                        <div className="add-wrapperM">
+                        <div className="add-wrapperM" onClick={openModal}>
                           <PiPlusBold className="add-icon" />
                         </div>
                         <div className="new-assessmentM">New assessmentM</div>
@@ -152,7 +164,7 @@ const AssesmentDesktop = () => {
                           <BsBagCheck className="frame-childM9" />
                           <div className="math-assessmentM-parentM">
                             <div className="assessmentMs-overview">
-                              Math assessmentM
+                              Math Assessment
                             </div>
                             <div className="job-parent">
                               <div className="job">Job</div>
@@ -219,7 +231,7 @@ const AssesmentDesktop = () => {
                           <BsBagCheck className="frame-childM9" />
                           <div className="math-assessmentM-parentM">
                             <div className="assessmentMs-overview">
-                              Math assessmentM
+                              Math Assessment
                             </div>
                             <div className="job-parent">
                               <div className="job">Job</div>
@@ -305,7 +317,7 @@ const AssesmentDesktop = () => {
             </div>
             <div className="note-alt-parent">
               <PiNotePencilLight className="note-alt-icon" />
-              <div className="dashboard">assessmentM</div>
+              <div className="dashboard">Assessment</div>
               <div className="rectangle-div" />
             </div>
             <div className="quiz-parentM">
@@ -333,6 +345,13 @@ const AssesmentDesktop = () => {
           </div>
         </div>
       </div>
+      {
+        isOpen && (
+          <div className="openModal-frame">
+            <NewAssesment closeModal={closeModal} />
+          </div>
+        )
+      }
     </div>
   );
 };
