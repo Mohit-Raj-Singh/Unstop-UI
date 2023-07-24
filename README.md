@@ -4,7 +4,7 @@
 This is a User Interface design with the help of Figma.
 
 ## Deployed App
-https://deployed-site.whatever
+https://unstop-ui-mohit-6164.vercel.app/
 
 ## Video Walkthrough of the project
 

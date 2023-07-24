@@ -842,8 +842,10 @@
   border-radius: var(--br-xs);
   overflow: hidden;
 }
-.openModal-frame {
+
+.openModal-frameMS{
   width: 50%;
   position: absolute;
-  top: 50px;
+  left: 320px;
+  top: 70px;
 }

@@ -387,10 +387,8 @@ const AssesmentDesktop = () => {
             </div>
           </div>
           {isOpen && (
-            <div className="model">
-              <div className="openModal-frame">
-                <NewAssesment closeModal={closeModal} />
-              </div>
+            <div className="openModal-frameMS">
+              <NewAssesment closeModal={closeModal} />
             </div>
           )}
         </div>
