@@ -6,11 +6,6 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const breakpoints = {
-  mobile: 375,
-  desktop: 1200
-}
-
 root.render(
   <React.StrictMode>
     <App />

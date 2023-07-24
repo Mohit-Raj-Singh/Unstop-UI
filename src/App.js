@@ -1,5 +1,3 @@
-// import './App.css';
-import { Media } from 'react-breakpoints';
 import AssesmentDesktop from './Components/AssesmentDesktop';
 import AssesmentMobile from './Components/AssesmentMobile';
 import NewAssesment from './Components/NewAssesment';
