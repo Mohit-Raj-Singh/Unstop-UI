@@ -57,6 +57,7 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .assessment {
   position: relative;
@@ -91,6 +92,7 @@
   height: 40px;
   padding: var(--padding-3xs);
   justify-content: center;
+  cursor: pointer;
 }
 .frame-parent57 {
   width: 375px;
@@ -223,6 +225,7 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .frame-parent64 {
   display: flex;
@@ -237,7 +240,7 @@
   position: relative;
   font-size: var(--font-size-xs);
   font-weight: 500;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .vector-icon5 {
   position: absolute;
@@ -583,4 +586,14 @@
   font-size: var(--font-size-base);
   color: var(--text-100);
   font-family: var(--font-inter);
+}
+.openModal-frame{
+  /* width: 50%; */
+  position: absolute;
+  width: 100%;
+  /* margin-left: 270px; */
+  margin-top: 80px;
+  margin: auto;
+  opacity: 1;
+  /* background-color: black; */
 }

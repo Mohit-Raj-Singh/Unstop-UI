@@ -3,13 +3,13 @@ import { MdOutlineDashboard, MdOutlineContentPaste } from "react-icons/md";
 import { BiPaste } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 
-const Sidebar = () => {
+const Sidebar = ({onClose}) => {
   return (
     <div className="frame-parentt">
       <div className="frame-groupp">
         <div className="menu-parentt">
           <div className="menuu">Menu</div>
-          <RxCross2 className="cut-iconn" />
+          <RxCross2 className="cut-iconn" onClick={onClose} />
         </div>
         <div className="frame-wrapperr">
           <div className="dashboard-parentt">

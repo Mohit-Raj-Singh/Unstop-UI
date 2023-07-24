@@ -66,6 +66,7 @@
   padding: var(--padding-3xs);
   box-sizing: border-box;
   justify-content: center;
+  cursor: pointer;
 }
 .frame-containerM {
   align-self: stretch;

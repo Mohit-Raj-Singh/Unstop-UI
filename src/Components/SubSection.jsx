@@ -2,7 +2,7 @@ import "./SubSection.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 
-const SubSection = () => {
+const SubSection = ({closeModal}) => {
   return (
     <div className="frame-parenttt">
       <div className="frame-wrapperrr">
@@ -14,7 +14,7 @@ const SubSection = () => {
             <div className="check-wrapperrr">
               <img className="check-iconnn" alt="" src="/check.svg" />
             </div>
-            <div className="cut-wrapperrr">
+            <div className="cut-wrapperrr" onClick={closeModal}>
               <RxCross2 className="cut-iconnn" />
             </div>
           </div>
