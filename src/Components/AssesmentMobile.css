@@ -227,6 +227,7 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .frame-parent64 {
   display: flex;
   flex-direction: column;
@@ -580,20 +581,25 @@
 .iphone-13-mini-7 {
   position: relative;
   background-color: var(--system-background);
-  width: 100%;
+  /* width: 100%; */
+  width: 375px;
+  margin: auto;
   height: 1390px;
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--text-100);
   font-family: var(--font-inter);
 }
-.openModal-frame{
-  /* width: 50%; */
+.openModal-frame {
+  width: 375px;
   position: absolute;
-  width: 100%;
-  /* margin-left: 270px; */
-  margin-top: 80px;
+  top: 150px;
   margin: auto;
   opacity: 1;
-  /* background-color: black; */
+}
+.openSideBar {
+  width: 320px;
+  position: fixed;
+  left: 764px;
+  top: 0px;
 }

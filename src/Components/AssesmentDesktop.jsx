@@ -5,6 +5,7 @@ import {
   PiLinkSimpleHorizontalBold,
   PiPlusBold,
   PiLinkSimpleBold,
+  PiCalendarBold,
 } from "react-icons/pi";
 import { BiPaste } from "react-icons/bi";
 import { AiOutlineLine } from "react-icons/ai";
@@ -14,8 +15,8 @@ import { TbWorldUp } from "react-icons/tb";
 import { ImMobile } from "react-icons/im";
 import { BsBagCheck } from "react-icons/bs";
 import { useState } from "react";
-import NewAssesment from "./NewAssesment";
 import AssesmentMobile from "./AssesmentMobile";
+import NewAssesment from "./NewAssesment";
 
 const AssesmentDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,344 +37,349 @@ const AssesmentDesktop = () => {
   return (
     <>
       {showMobile ? (
-        <div className="frame-parentM">
-          <div className="frame-childM" />
-          <div className="frame-groupM">
-            <div className="frame-wrapperM">
-              <div className="frame-containerM">
-                <div className="assessmentM-parentM">
-                  <div className="assessmentM">assessment</div>
-                  <img className="frame-itemM" alt="" src="/vector-298.svg" />
-                  <div className="frame-divM">
-                    <div className="my-assessmentMs-wrapperM">
-                      <div className="my-assessmentMs">My assessments</div>
+        <div className="frame-parentMS">
+          <div className="frame-childMS" />
+          <div className="frame-groupMS">
+            <div className="frame-wrapperMS">
+              <div className="frame-containerMS">
+                <div className="assessment-parentMS">
+                  <div className="assessmentMS">Assessment</div>
+                  <img className="frame-itemMS" alt="" src="/vector-298.svg" />
+                  <div className="frame-divMS">
+                    <div className="my-assessments-wrapperMS">
+                      <div className="my-assessmentsMS">My Assessments</div>
                     </div>
                   </div>
                 </div>
                 <div
-                  className="mobile-screen-share-wrapperM"
+                  className="mobile-screen-share-wrapperMS"
                   onClick={handleMobileView}
                 >
-                  <ImMobile className="mobile-screen-share-iconM" />
+                  <ImMobile className="mobile-screen-share-iconMS" />
                 </div>
               </div>
             </div>
-            <div className="frame-wrapperM1">
-              <div className="frame-wrapperM2">
-                <div className="frame-parentM1">
-                  <div className="assessmentMs-overview-parentM">
-                    <div className="assessmentMs-overview">
-                      assessments Overview
+            <div className="frame-wrapper1MS">
+              <div className="frame-wrapper2MS">
+                <div className="frame-parent1MS">
+                  <div className="assessments-overview-parentMS">
+                    <div className="assessments-overviewMS">
+                      Assessments Overview
                     </div>
-                    <div className="frame-parentM2">
-                      <div className="total-assessmentM-parentM">
-                        <div className="assessmentM">Total assessment</div>
-                        <div className="frame-parentM3">
-                          <TiEqualsOutline className="frame-innerM" />
-                          <b className="bM">34</b>
+                    <div className="frame-parent2MS">
+                      <div className="total-assessment-parentMS">
+                        <div className="assessmentMS">Total Assessment</div>
+                        <div className="frame-parent3MS">
+                          <div className="frame-equalsMS-box">
+                            <TiEqualsOutline className="frame-equalsMS" />
+                          </div>
+                          <b className="b">34</b>
                         </div>
                       </div>
-                      <img
-                        className="vector-icon"
-                        alt=""
-                        src="/vector-251.svg"
-                      />
-                      <div className="candidates-parent">
-                        <div className="assessmentM">Candidates</div>
-                        <div className="frame-parentM4">
-                          <RiParentLine className="frame-innerM" />
-                          <div className="frame-parentM5">
-                            <div className="parent">
-                              <b className="bM">11,145</b>
-                              <div className="div">+89</div>
+                      <div className="candidates-parentMS">
+                        <div className="assessmentMS">Candidates</div>
+                        <div className="frame-parent4MS">
+                          <div className="frame-parentMS-box">
+                            <RiParentLine className="frame-equalsMS" />
+                          </div>
+                          <div className="frame-parent5MS">
+                            <div className="parentMS">
+                              <b className="b">11,145</b>
+                              <div className="divMS">+89</div>
                             </div>
-                            <div className="total-candidate">
+                            <div className="total-candidateMS">
                               Total Candidate
                             </div>
                           </div>
                           <img
-                            className="frame-childM1"
+                            className="frame-child1MS"
                             alt=""
                             src="/vector-250.svg"
                           />
-                          <div className="frame-parentM5">
-                            <div className="parent">
-                              <b className="bM">1,14</b>
-                              <div className="divM">+89</div>
+                          <div className="frame-parent5MS">
+                            <div className="parentMS">
+                              <b className="b">1,14</b>
+                              <div className="divMS">+89</div>
                             </div>
-                            <div className="total-candidate">Who Attamped</div>
+                            <div className="total-candidateMS">
+                              Who Attamped
+                            </div>
                           </div>
                         </div>
                       </div>
                       <img
-                        className="vector-icon"
+                        className="vector-iconMS"
                         alt=""
                         src="/vector-251.svg"
                       />
-                      <div className="candidates-source-parent">
-                        <div className="assessmentM">Candidates Source</div>
-                        <div className="frame-parentM4">
-                          <TbWorldUp className="frame-innerM" />
-                          <div className="frame-parentM5">
-                            <div className="parent">
-                              <b className="bM">11,000</b>
-                              <div className="divM">+89</div>
+                      <div className="candidates-source-parentMS">
+                        <div className="assessmentMS">Candidates Source</div>
+                        <div className="frame-parent4MS">
+                          <div className="frame-worldMS-box">
+                            <TbWorldUp className="frame-worldMS" />
+                          </div>
+                          <div className="frame-parent5MS">
+                            <div className="parentMS">
+                              <b className="b">11,000</b>
+                              <div className="divMS">+89</div>
                             </div>
-                            <div className="total-candidate">E-mail</div>
+                            <div className="total-candidateMS">E-mail</div>
                           </div>
                           <img
-                            className="frame-childM1"
+                            className="frame-child1MS"
                             alt=""
                             src="/vector-250.svg"
                           />
-                          <div className="frame-parentM5">
-                            <div className="parent">
-                              <b className="bM">145</b>
-                              <div className="divM">+89</div>
+                          <div className="frame-parent5MS">
+                            <div className="parentMS">
+                              <b className="b">145</b>
+                              <div className="divMS">+89</div>
                             </div>
-                            <div className="total-candidate">Social Share</div>
+                            <div className="total-candidateMS">
+                              Social Share
+                            </div>
                           </div>
                           <img
-                            className="frame-childM1"
+                            className="frame-child1MS"
                             alt=""
                             src="/vector-250.svg"
                           />
-                          <div className="frame-parentM5">
-                            <div className="parent">
-                              <b className="bM">145</b>
-                              <div className="divM">+89</div>
+                          <div className="frame-parent5MS">
+                            <div className="parentMS">
+                              <b className="b">145</b>
+                              <div className="divMS">+89</div>
                             </div>
-                            <div className="total-candidate">Unique Link</div>
+                            <div className="total-candidateMS">Unique Link</div>
                           </div>
                         </div>
                       </div>
                       <img
-                        className="vector-icon"
+                        className="vector-iconMS"
                         alt=""
                         src="/vector-251.svg"
                       />
-                      <div className="total-purpose-parent">
-                        <div className="assessmentM">Total Purpose</div>
-                        <div className="frame-parentM3">
-                          <PiLinkSimpleHorizontalBold className="frame-innerM" />
-                          <b className="bM">11</b>
+                      <div className="total-purpose-parentMS">
+                        <div className="assessmentMS">Total Purpose</div>
+                        <div className="frame-parent3MS">
+                          <div className="frame-innerMS-box">
+                            <PiLinkSimpleHorizontalBold className="frame-innerMS" />
+                          </div>
+
+                          <b className="b">11</b>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="assessmentMs-overview-parentM">
-                    <div className="my-assessmentM-parentM">
-                      <div className="assessmentMs-overview">My Assessment</div>
-                      <div className="frame-wrapperM3">
-                        <div className="frame-childM8" />
+                  <div className="assessments-overview-parentMS">
+                    <div className="my-assessment-parentMS">
+                      <div className="assessments-overviewMS">
+                        My Assessment
+                      </div>
+                      <div className="frame-wrapper3MS">
+                        <div className="frame-child8MS" />
                       </div>
                     </div>
-                    <div className="frame-parentM13">
-                      <div className="frame-parentM14">
-                        <div className="frame-parentM15">
-                          <div className="frame-parentM16">
-                            <div className="add-wrapperM" onClick={openModal}>
-                              <PiPlusBold className="add-icon" />
+                    <div className="frame-parent13MS">
+                      <div className="frame-parent14MS">
+                        <div className="frame-parent15MS">
+                          <div className="frame-parent16MS">
+                            <div className="add-wrapperMS" onClick={openModal}>
+                              <PiPlusBold className="add-iconMS" />
                             </div>
-                            <div className="new-assessmentM">
-                              New assessmentM
+                            <div className="new-assessmentMS">
+                              New Assessment
                             </div>
                           </div>
-                          <div className="from-here-you">
+                          <div className="from-here-youMS">
                             From here you can add questions of multiple types
                             like MCQs, subjective (text or paragraph)!
                           </div>
                           <img
-                            className="vector-icon1"
+                            className="vector-icon1MS"
                             alt=""
                             src="/vector.svg"
                           />
                         </div>
-                        <div className="frame-parentM17">
-                          <div className="frame-parentM18">
-                            <div className="frame-parentM19">
-                              <BsBagCheck className="frame-childM9" />
-                              <div className="math-assessmentM-parentM">
-                                <div className="assessmentMs-overview">
+                        <div className="frame-parent17MS">
+                          <div className="frame-parent18MS">
+                            <div className="frame-parent19MS">
+                              <div className="frame-child-box-19">
+                                <BsBagCheck className="frame-child9MS" />
+                              </div>
+                              <div className="math-assessment-parentMS">
+                                <div className="assessments-overviewMS">
                                   Math Assessment
                                 </div>
-                                <div className="job-parent">
-                                  <div className="job">Job</div>
+                                <div className="job-parentMS">
+                                  <div className="jobMS">Job</div>
                                   <img
-                                    className="frame-childM10"
+                                    className="frame-child10MS"
                                     alt=""
                                     src="/vector-333.svg"
                                   />
-
-                                  <div className="calendar-today-parent">
-                                    <img
-                                      className="calendar-today-icon"
-                                      alt=""
-                                      src="/calendar-today.svg"
-                                    />
-                                    <div className="new-assessmentM">
+                                  <div className="calendar-today-parentMS">
+                                    <PiCalendarBold className="calendar-today-iconMS" />
+                                    <div className="new-assessmentMS">
                                       20 Apr 2023
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="dot-wrapperM">
+                            <div className="dot-wrapperMS">
                               <img
-                                className="dot-iconM"
+                                className="dot-iconMS"
                                 alt=""
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAls7r9RiZjrpWZKLHKrvCtAyJp2WutzEjxcuEtTaZHzDUPqmRHwm2iLb50GoWGY266I&usqp=CAU"
                               />
                             </div>
                           </div>
                           <img
-                            className="frame-childM11"
+                            className="frame-child11MS"
                             alt=""
                             src="/vector-332.svg"
                           />
-                          <div className="frame-parentM20">
-                            <div className="frame-parentM21">
-                              <div className="parent3">
-                                <div className="assessmentM">00</div>
-                                <div className="duration">Duration</div>
+                          <div className="frame-parent20MS">
+                            <div className="frame-parent21MS">
+                              <div className="parent3MS">
+                                <div className="assessmentMS">00</div>
+                                <div className="durationMS">Duration</div>
                               </div>
-                              <div className="parent3">
-                                <div className="assessmentM">00</div>
-                                <div className="duration">Questions</div>
+                              <div className="parent3MS">
+                                <div className="assessmentMS">00</div>
+                                <div className="durationMS">Questions</div>
                               </div>
                             </div>
-                            <div className="frame-parentM22">
-                              <div className="link-parent">
-                                <PiLinkSimpleBold className="link-icon" />
-                                <div className="assessmentMs-overview">
+                            <div className="frame-parent22MS">
+                              <div className="link-parentMS">
+                                <PiLinkSimpleBold className="link-iconMS" />
+                                <div className="assessments-overviewMS">
                                   Share
                                 </div>
                               </div>
-                              <div className="frame-wrapperM4">
-                                <div className="lp-wrapperM">
-                                  <b className="lp">LP</b>
+                              <div className="frame-wrapper4MS">
+                                <div className="lp-wrapperMS">
+                                  <b className="lpMS">LP</b>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div className="frame-childM12" />
+                          <div className="frame-child12MS" />
                         </div>
-                        <div className="frame-parentM17">
-                          <div className="frame-parentM18">
-                            <div className="frame-parentM19">
-                              <BsBagCheck className="frame-childM9" />
-                              <div className="math-assessmentM-parentM">
-                                <div className="assessmentMs-overview">
+                        <div className="frame-parent17MS">
+                          <div className="frame-parent18MS">
+                            <div className="frame-parent19MS">
+                              <div className="frame-child-box-19">
+                                <BsBagCheck className="frame-child9MS" />
+                              </div>
+                              <div className="math-assessment-parentMS">
+                                <div className="assessments-overviewMS">
                                   Math Assessment
                                 </div>
-                                <div className="job-parent">
-                                  <div className="job">Job</div>
+                                <div className="job-parentMS">
+                                  <div className="jobMS">Job</div>
                                   <img
-                                    className="frame-childM10"
+                                    className="frame-child10MS"
                                     alt=""
                                     src="/vector-333.svg"
                                   />
-                                  <div className="calendar-today-parent">
-                                    <img
-                                      className="calendar-today-icon"
-                                      alt=""
-                                      src="/calendar-today1.svg"
-                                    />
-                                    <div className="new-assessmentM">
+                                  <div className="calendar-today-parentMS">
+                                    <PiCalendarBold className="calendar-today-iconMS" />
+                                    <div className="new-assessmentMS">
                                       20 Apr 2023
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="dot-wrapperM">
+                            <div className="dot-wrapperMS">
                               <img
-                                className="dot-iconM"
+                                className="dot-iconMS"
                                 alt=""
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAls7r9RiZjrpWZKLHKrvCtAyJp2WutzEjxcuEtTaZHzDUPqmRHwm2iLb50GoWGY266I&usqp=CAU"
                               />
                             </div>
                           </div>
                           <img
-                            className="frame-childM11"
+                            className="frame-child11MS"
                             alt=""
                             src="/vector-332.svg"
                           />
-                          <div className="frame-parentM20">
-                            <div className="frame-parentM21">
-                              <div className="parent3">
-                                <div className="assessmentM">00</div>
-                                <div className="duration">Duration</div>
+                          <div className="frame-parent20MS">
+                            <div className="frame-parent21MS">
+                              <div className="parent3MS">
+                                <div className="assessmentMS">00</div>
+                                <div className="durationMS">Duration</div>
                               </div>
-                              <div className="parent3">
-                                <div className="assessmentM">00</div>
-                                <div className="duration">Questions</div>
+                              <div className="parent3MS">
+                                <div className="assessmentMS">00</div>
+                                <div className="durationMS">Questions</div>
                               </div>
                             </div>
-                            <div className="frame-parentM22">
-                              <div className="link-parent">
-                                <PiLinkSimpleBold className="link-icon" />
-                                <div className="assessmentMs-overview">
+                            <div className="frame-parent22MS">
+                              <div className="link-parentMS">
+                                <PiLinkSimpleBold className="link-iconMS" />
+                                <div className="assessments-overviewMS">
                                   Share
                                 </div>
                               </div>
-                              <div className="frame-wrapperM4">
-                                <div className="frame-parentM29">
-                                  <div className="lp-wrapperM">
-                                    <b className="lp">LP</b>
+                              <div className="frame-wrapper4MS">
+                                <div className="frame-parent29MS">
+                                  <div className="lp-wrapperMS">
+                                    <b className="lpMS">LP</b>
                                   </div>
-                                  <div className="lp-frame">
-                                    <b className="lp">LP</b>
+                                  <div className="lp-frameMS">
+                                    <b className="lpMS">LP</b>
                                   </div>
-                                  <div className="lp-wrapperM1">
-                                    <b className="lp">LP</b>
+                                  <div className="lp-wrapper1MS">
+                                    <b className="lpMS">LP</b>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div className="frame-childM12" />
+                          <div className="frame-child12MS" />
                         </div>
                       </div>
-                      <div className="frame-childM17" />
+                      <div className="frame-child17MS" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frame-wrapperM6">
-            <div className="frame-parentM30">
-              <div className="frame-parentM31">
-                <div className="dashboard-parent">
-                  <MdOutlineDashboard className="dashboard-icon" />
-                  <div className="dashboard">Dashboard</div>
-                  <div className="rectangle-div" />
+          <div className="frame-wrapper6MS">
+            <div className="frame-parent30MS">
+              <div className="frame-parent31MS">
+                <div className="dashboard-parentMS">
+                  <MdOutlineDashboard className="dashboard-iconMS" />
+                  <div className="dashboardMS">Dashboard</div>
+                  <div className="rectangle-divMS" />
                 </div>
-                <div className="note-alt-parent">
-                  <PiNotePencilLight className="note-alt-icon" />
-                  <div className="dashboard">Assessment</div>
-                  <div className="rectangle-div" />
+                <div className="note-alt-parentMS">
+                  <PiNotePencilLight className="note-alt-iconMS" />
+                  <div className="dashboardMS">Assessment</div>
+                  <div className="rectangle-divMS" />
                 </div>
-                <div className="quiz-parentM">
+                <div className="quiz-parentMS">
                   <BiPaste className="note-alt-icon" />
-                  <div className="assessmentMs-overview">My Library</div>
+                  <div className="assessments-overviewMS">My Library</div>
                 </div>
-                <div className="frame-childM19" />
-                <div className="frame-childM19" />
-                <div className="frame-childM19" />
+                <div className="frame-child19MS" />
+                <div className="frame-child19MS" />
+                <div className="frame-child19MS" />
               </div>
-              <div className="vector-parent">
-                <AiOutlineLine className="frame-childM22" />
-                <div className="frame-parentM32">
-                  <div className="admin-wrapperM">
-                    <div className="new-assessmentM">Admin</div>
+              <div className="vector-parentMS">
+                <AiOutlineLine className="frame-child22MS" />
+                <div className="frame-parent32MS">
+                  <div className="admin-wrapperMS">
+                    <div className="new-assessmentMS">Admin</div>
                   </div>
-                  <div className="admin-meds-parent">
-                    <MdOutlineContentPaste className="dot-iconM" />
-                    <div className="assessmentMs-overview">
-                      <p className="round">Round</p>
-                      <p className="round">Status</p>
+                  <div className="admin-meds-parentMS">
+                    <MdOutlineContentPaste className="dot-iconMS" />
+                    <div className="assessments-overviewMS">
+                      <p className="roundMS">Round</p>
+                      <p className="roundMS">Status</p>
                     </div>
                   </div>
                 </div>
@@ -381,8 +387,10 @@ const AssesmentDesktop = () => {
             </div>
           </div>
           {isOpen && (
-            <div className="openModal-frame">
-              <NewAssesment closeModal={closeModal} />
+            <div className="model">
+              <div className="openModal-frame">
+                <NewAssesment closeModal={closeModal} />
+              </div>
             </div>
           )}
         </div>

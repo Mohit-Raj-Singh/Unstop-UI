@@ -8,7 +8,6 @@ import { useState } from "react";
 import AssesmentDesktop from "./AssesmentDesktop";
 import Sidebar from "./Sidebar";
 import SubSection from "./SubSection";
-// import Sidebar from "./Sidebar";
 
 const AssesmentMobile = () => {
   const [showDesktop, setShowDesktop] = useState(true);
@@ -21,6 +20,7 @@ const AssesmentMobile = () => {
 
   const handleShow = () => {
     setShowSidebar(true);
+    console.log(showSidebar);
   };
 
   const closeSide = () => {
@@ -84,7 +84,7 @@ const AssesmentMobile = () => {
                   <div className="frame-parent62">
                     <div className="frame-parent63">
                       <div className="frame-parent64">
-                        <div className="add-container"onClick={openModal} >
+                        <div className="add-container" onClick={openModal}>
                           <PiPlusBold className="add-icon1" />
                         </div>
                         <div className="my-assessment1">New Assessment</div>
@@ -650,7 +650,11 @@ const AssesmentMobile = () => {
         <AssesmentDesktop />
       )}
 
-      {showSidebar && <Sidebar onClose={closeSide} />}
+      {showSidebar && (
+        <div className="openSideBar">
+          <Sidebar onClose={closeSide} />
+        </div>
+      )}
     </>
   );
 };
