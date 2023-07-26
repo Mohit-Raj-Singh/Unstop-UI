@@ -37,6 +37,7 @@ const AssesmentDesktop = () => {
   return (
     <>
       {showMobile ? (
+        <div className="main-frame-boxMS">
         <div className="frame-parentMS">
           <div className="frame-childMS" />
           <div className="frame-groupMS">
@@ -391,6 +392,7 @@ const AssesmentDesktop = () => {
               <NewAssesment closeModal={closeModal} />
             </div>
           )}
+        </div>
         </div>
       ) : (
         <AssesmentMobile />

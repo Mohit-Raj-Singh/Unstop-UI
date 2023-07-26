@@ -38,6 +38,7 @@ const AssesmentMobile = () => {
   return (
     <>
       {showDesktop ? (
+        <div className="mobile-frame-MRS">
         <div className="iphone-13-mini-7">
           <div className="status-bar-group">
             <div className="status-bar-parent">
@@ -645,6 +646,7 @@ const AssesmentMobile = () => {
               <SubSection closeModal={closeModal} />
             </div>
           )}
+        </div>
         </div>
       ) : (
         <AssesmentDesktop />

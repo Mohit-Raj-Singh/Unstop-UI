@@ -2,7 +2,8 @@
   position: absolute;
   top: 2px;
   left: 156px;
-  width: 1264px;
+  /* width: 1264px; */
+  width: 100%;
 }
 .assessmentMS {
   position: relative;
@@ -125,7 +126,6 @@
 .total-assessment-parentMS {
   align-self: stretch;
   background-color: var(--text-white);
-  width: 162px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -204,14 +204,15 @@
   box-sizing: border-box;
 }
 .candidates-source-parentMS {
-  width: 499px;
+  /* width: 499px; */
+  width: 45%;
   display: flex;
   padding: var(--padding-base) var(--padding-xl);
   align-items: flex-start;
   justify-content: flex-start;
 }
 .total-purpose-parentMS {
-  width: 188px;
+  width: 15%;
   padding: var(--padding-base) 50px var(--padding-base) var(--padding-xl);
 }
 .assessments-overview-parentMS,
@@ -225,7 +226,8 @@
   border-radius: var(--br-xs);
   border: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
-  width: 1226px;
+  width: 100%;
+  /* width: 1226px; */
   overflow: hidden;
   flex-direction: row;
   gap: var(--gap-12xs);
@@ -249,7 +251,8 @@
   justify-content: flex-start;
 }
 .my-assessment-parentMS {
-  width: 1224px;
+  /* width: 1224px; */
+  width: 100%;
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -555,13 +558,14 @@
   justify-content: center;
 }
 .frame-parent14MS {
-  width: 1224px;
+  /* width: 1224px; */
+  width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-11xl);
 }
 .frame-child17MS {
-  width: 1224px;
+  width: 100%;
 }
 .frame-parent1MS,
 .frame-parent13MS {
@@ -601,7 +605,6 @@
   position: absolute;
   top: 3px;
   left: 156px;
-  width: 1264px;
 }
 .dashboard-iconMS {
   position: relative;
@@ -848,4 +851,7 @@
   position: absolute;
   left: 320px;
   top: 70px;
+}
+.main-frame-boxMS{
+  width: 100%;
 }
